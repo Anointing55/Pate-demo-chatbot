@@ -1,10 +1,14 @@
 from flask import Flask, request, jsonify, render_template
-from pate import pate
+
+# Move the import inside the function to avoid circular imports
+def init_pate():
+    from pate import pate
+    pate.initialize_database()
 
 app = Flask(__name__)
 
-# Initialize database on startup
-pate.initialize_database()
+# Initialize database when the app starts
+init_pate()
 
 # Homepage - shows the chat UI
 @app.route("/")
