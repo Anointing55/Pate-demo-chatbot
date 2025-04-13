@@ -1,63 +1,100 @@
 body {
-  background-color: #0e0e1a;
-  color: #f0f0f0;
-  font-family: 'Segoe UI', sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
   margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f0f1a;
+  color: #ffffff;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(145deg, #1f1f2e, #2c2c40);
+  box-shadow: 0 0 20px #00ffcc50;
+}
+
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  color: #b0b0ff;
+  font-size: 1.1rem;
+}
+
+.features {
+  padding: 2rem;
+  background-color: #151522;
+  border-top: 2px solid #333355;
+  border-bottom: 2px solid #333355;
+}
+
+.features h2 {
+  text-align: center;
+  color: #66ffcc;
+  margin-bottom: 1rem;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: auto;
+}
+
+.features li {
+  margin-bottom: 0.75rem;
+  background: #1c1c2f;
+  padding: 0.8rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ffaa40;
 }
 
 .chat-container {
-  background: #1a1a2e;
-  border: 2px solid #3f0071;
-  border-radius: 16px;
-  padding: 20px;
-  width: 90%;
-  max-width: 500px;
-  box-shadow: 0 0 20px #3f0071;
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
 }
 
-h1 {
-  text-align: center;
-  color: #9a86fd;
-}
-
-#chat-box {
-  height: 300px;
+.chat-box {
+  background-color: #1a1a2e;
+  border: 2px solid #3f3f6b;
+  border-radius: 12px;
+  padding: 1.5rem;
+  min-height: 200px;
+  margin-bottom: 1rem;
   overflow-y: auto;
-  background: #12122a;
-  border: 1px solid #444;
-  padding: 10px;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  max-height: 400px;
 }
 
-.input-section {
+.input-container {
   display: flex;
-  gap: 10px;
+  gap: 1rem;
 }
 
-input[type="text"] {
-  flex: 1;
-  padding: 10px;
-  border-radius: 10px;
+#userInput {
+  flex-grow: 1;
+  padding: 1rem;
+  font-size: 1rem;
   border: none;
+  border-radius: 10px;
+  background-color: #272742;
+  color: white;
   outline: none;
-  font-size: 1em;
 }
 
 button {
-  background: #9a86fd;
-  color: #fff;
+  padding: 1rem 2rem;
+  background-color: #5f5fff;
   border: none;
-  padding: 10px 16px;
   border-radius: 10px;
+  color: white;
+  font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s;
 }
 
 button:hover {
-  background: #7f6ee8;
+  background-color: #8787ff;
 }
